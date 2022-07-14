@@ -1,0 +1,41 @@
+//-File Name : receive.pug
+block style 
+            style
+                include ../static/receive.css
+            script
+                include ../static/receive.js
+block content
+    .container
+        h1 Registration For Blood Receive
+        form(action="/receive" method="post" class="myinput")
+            .inpclass
+                label(for="myname") Enter Your Name 
+                input(type="text" id="myname" name="names" pattern="[a-zA-Z][a-zA-Z ]{2,}" placeholder="Enter name here" class="inpitem" required/)
+            .inpclass
+                label(for="group") Choose The Blood Group You Want
+                select(name="blgroup" id="group" class="inpitem" required/)
+                    option(value="A+") A+
+                    option(value="B+") B+
+                    option(value="AB+") AB+
+                    option(value="O+") O+
+                    option(value="A-") A-
+                    option(value="B-") B-
+                    option(value="AB-") AB-
+                    option(value="O-") O-
+            .inpclass
+                label(for="size") Enter Size Of Blood Group(max 1000 ml)
+                input(type="number" id="size" name="size" placeholder="Enter size of blood here" min-value="50" class="inpitem" required/)
+            .inpclass
+                label(for="addr") Enter Your Address Below
+                input(type="text" id="addr" name="address" placeholder="Enter address here" class="inpitem" required/)
+            .inpclass
+                label(for="mail") Enter Your Mail Id
+                input(type="email" id="mail" name="email" placeholder="Enter email here" class="inpitem" required/)
+            .inpclass
+                label(for="phone") Enter Your Phone Number
+                input(type="number" id="phone" name="phones" placeholder="Enter phone number here" class="inpitem" required/)
+            .inpclass
+                label(for="reson") Enter Your Reson
+                input(type="text" id="reson" name="reson" placeholder="Enter reson here" class="inpitem" required/)
+            .inpclass 
+                button(class="btn inpitem" onclick="verify()") Submit

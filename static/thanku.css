@@ -1,0 +1,34 @@
+/* File-Name: thanku.css */
+.section{
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(rgb(247, 235, 102),rgb(246, 53, 53));
+    text-align: center;
+}
+.box1{
+    height: 50vh;
+}
+h1{
+    font-size: 6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 3px black;
+    padding-top: 20vh;
+}
+p{
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+}
+button{
+    color: brown;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+
+}
+button:hover{
+    cursor: pointer;
+}
+.box1{
+    height: 50vh;
+}

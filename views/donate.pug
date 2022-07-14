@@ -1,0 +1,41 @@
+//-File Name : donate.pug
+block style 
+            style
+                include ../static/donate.css
+            script 
+                include ../static/donate.js
+block content
+    .container
+        h1 Registration For Blood Donation
+        form(action="/donate" method="post" class="myinput")
+            .inpclass
+                label(for="myname") Enter Your Name 
+                input(type="text" id="myname" name="name" pattern="[a-zA-Z][a-zA-Z ]{2,}" placeholder="Enter name here" class="inpitem" required/)
+            .inpclass
+                label(for="myage") Enter Your Age (it should be in between 18 to 55)
+                input(type="number" id="myage" name="age" placeholder="Enter age here" class="inpitem" required/)
+            .inpclass
+                label(for="mywt") Enter Your Weight (it should be greater than 50)
+                input(type="number" id="mywt" name="weight" placeholder="Enter weight here" min-value="50" class="inpitem" required/)
+            .inpclass
+                label(for="date") Choose date for blood donation
+                input(type="date" id="date" name="date" min="2022-09-01" placeholder="Enter date here" class="inpitem" required/)
+            .inpclass
+                label(for="time") Choose time for blood donation
+                input(type="time" id="time" name="time" min="08:00" max="14:00" placeholder="Enter your time" class="inpitem" required/)
+            .inpclass
+                label(for="phone") Enter Your Phone Number
+                input(type="number" id="phone" name="phone" placeholder="Enter phone number here" class="inpitem" required/)
+            .inpclass
+                label(for="blgrp") Choose Your Blood Group
+                select(name="group" id="blgrp" class="inpitem" size="1" required/)
+                    option(value="A+") A+
+                    option(value="B+") B+
+                    option(value="AB+") AB+
+                    option(value="O+") O+
+                    option(value="A-") A-
+                    option(value="B-") B-
+                    option(value="AB-") AB-
+                    option(value="O-") O-
+            .inpclass 
+                button(onclick="verify()" class="btn inpitem") Submit

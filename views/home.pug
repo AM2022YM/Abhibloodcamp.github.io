@@ -1,0 +1,16 @@
+//-File Name : home.pug
+extends base.pug
+block style 
+            style
+                include ../static/home.css
+                include ../static/style.css
+block content
+    .container1 
+        .box1 
+            h1.heading1 Welcome In Our Blood Camp
+            p.para1 The purpose of blood donation camp is to select a suitable donor whose blood is safe to the recipients and who himself shall not in any way be harmed by blood donation. Today in the developed world, most blood donors are unpaid volunteers who donate blood for a community supply. In some countries, established supplies are limited and donors usually give blood when family or friends need a transfusion (directed donation). Many donors donate for several reasons, such as a form of charity, general awareness regarding the demand for blood, increased confidence in oneself, helping a personal friend or relative, and social pressure. Despite the many reasons that people donate, not enough potential donors actively donate.
+        .box2 
+            p.para1.para2 By clicking below you can donate or receive blood
+            .btn
+                a(href="/donate" class="button1") Donate
+                a(href="/receive" class="button1") Receive

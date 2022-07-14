@@ -1,0 +1,41 @@
+//-File Name : available.pug
+extends base.pug
+block style 
+            style
+                include ../static/available.css
+                include ../static/style.css
+block content
+    .container
+        .section1 
+            h1 Stock In Our Blood-Bank
+            p Following table shows the availability of blood in our blood bank, most available stock of blood group are of A positive and O positive. Which means most of the donars has that blood group. and most rare blood group is O negative which has less number of donars for danate the O negative blood.
+        .section1
+            h1 Availability Of Blood Group
+            table
+                tr
+                    th Blood Group
+                    th Available Stock
+                tr
+                    td A+
+                    td 204 ltr
+                tr
+                    td A-
+                    td 134 ltr
+                tr
+                    td B+
+                    td 123 ltr
+                tr
+                    td B-
+                    td 34 ltr
+                tr
+                    td AB+
+                    td 56 ltr
+                tr
+                    td AB-
+                    td 88 ltr
+                tr
+                    td O+
+                    td 216 ltr
+                tr
+                    td O-
+                    td 18 ltr

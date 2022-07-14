@@ -1,0 +1,50 @@
+/* File-Name: donate.css */
+body{
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(249, 23, 27);
+    text-shadow: 2px 2px 4px black;
+    font-size: 2.4rem;
+}
+.container{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3) url('../static/bldp11.jpg') center/cover;
+    background-blend-mode: darken;
+}
+.myinput{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85vh;
+    width: 40%;
+    margin: auto;
+}
+.inpclass{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.inpitem{
+    text-align: center;
+    padding: 5px;
+    margin-top: 4px;
+}
+.btn{
+    background-color: rgb(115, 55, 244);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 30%;
+    margin: auto;
+    cursor: pointer;
+}

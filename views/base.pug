@@ -1,0 +1,20 @@
+//-File Name : base.pug
+html 
+    head 
+        title Blood Camp
+        block script 
+        block style 
+            style
+                include ../static/style.css
+    body 
+        nav#navbar 
+            img(src="../static/bldp13.png", alt=" " class="img")
+            ul 
+                li #[a(href="/home") Home]
+                li #[a(href="/about") About]
+                li #[a(href="/services") Services]
+                li #[a(href="/available") Available]
+                li #[a(href="/contact") Contact]
+        block content 
+        block foot
+            footer Copyright @ 2022 allaboutabhi.com | All right reserve

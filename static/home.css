@@ -1,0 +1,56 @@
+/* File-Name: home.css */
+.container1{
+    height: 90vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7) url('../static/bldp7.jpg') center/cover;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box1{
+    /* border: 4px solid black; */
+    text-align: center;
+}
+.box2{
+    /* border: 4px solid black; */
+    text-align: center;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button1{
+    background-color: rgb(247, 243, 243);
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: monospace;
+    box-shadow: 8px 8px 6px black;
+    border: 1px solid rgb(11, 11, 11);
+    font-weight: bold;
+}
+.button1:hover{
+    background-color: rgb(85, 3, 3);
+    color: aliceblue;
+}
+.heading1{
+    color: rgb(33, 172, 222);
+    padding-bottom: 20px;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 4px 4px 4px black;
+}
+.para1{
+    color: rgb(250, 248, 248);
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.para2{
+    color: rgb(205, 249, 7);
+}
